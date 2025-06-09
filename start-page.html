@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hem</title>
+    <link rel="stylesheet" href="start-page.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <script src="start-page.js" defer></script>
+    <script src="SignOut.js" defer></script>
+  </head>
+
+  <body>
+    <header class="topNav">
+      <article>
+        <p id="logo">Barbiefy</p>
+      </article>
+      <nav>
+        <a id="logIn" href="login.html">Logga in</a>
+      </nav>
+    </header>
+    <section class="heroImage">
+      <img src="start-images/barbie-princess.jpg" alt="Barbie läser en bok" />
+    </section>
+    <main>
+      <section class="books">
+        <nav class="searchBar">
+          <input type="text" name="" id="searchInput" />
+          <button id="searchBtn">Sök</button>
+        </nav>
+        <h1>Böcker</h1>
+        <section id="bookSection"></section>
+      </section>
+    </main>
+    <footer>
+      <section class="contactUs">
+        <section id="contactInfo">
+          <p><span>Mailadress: </span><a>barbiefy@info.com</a></p>
+          <p><span>Telefonnr: </span> <a>042-10 20 30</a></p>
+        </section>
+
+        <aside id="socials">
+          <img src="logos/facebook.svg" />
+          <img src="logos/insta.svg" />
+          <img src="logos/x.svg" />
+          <img src="logos/wordpress.svg" />
+        </aside>
+      </section>
+      <p id="copyRight">&copy;Barbiefy AB</p>
+    </footer>
+    <dialog id="modal">
+      <button id="close-modal" class="close-modal">✖</button>
+      <img id="modal-image" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-author"></p>
+      <ul id="modal-list">
+        <li id="modal-genre"></li>
+        <li id="modal-length"></li>
+        <li id="story">
+          <fieldset>
+            <legend>Beskrivning</legend>
+            <p id="modal-story"></p>
+          </fieldset>
+        </li>
+      </ul>
+      <p id="modal-status"></p>
+      <a href="login.html" id="loan-btn"></a>
+      <a href="login.html" id="review-btn">Logga in för att skriv recension</a>
+      <fieldset class="review-sec">
+        <legend>Recensioner</legend>
+        <section id="reviews"></section>
+      </fieldset>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ken",
+      "email": "admin@barbiefy.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Jason",
+      "email": "user@test.com",
+      "password": "user",
+      "role": "user",
+      "borrowed": [],
+      "reserved": [],
+      "history": []
+    },
+    {
+      "id": "4764",
+      "name": "Rebecka",
+      "email": "bexgren@mail.com",
+      "password": "rebecka",
+      "role": "user",
+      "borrowed": [],
+      "reserved": [],
+      "history": []
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "Barbie: En sagolik modeshow",
+      "description": "Barbie spelar sig själv i detta magiska äventyr.",
+      "genre": "Barn",
+      "author": "Marsha Mellow",
+      "image": "./Omslagsbilder/Barbie1.jpg",
+      "pages": 120,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Barbie och Diamantslottet",
+      "description": "Barbie och hennes bästa vän Teresa hittar ett slott helt gjort av diamanter.",
+      "genre": "Barn",
+      "author": "Neil Down",
+      "image": "./Omslagsbilder/Barbie2.jpg",
+      "pages": 130,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Barbie och sjöjungfruns berättelse",
+      "description": "Barbie spelar Merliah, en surfmästare från Malibu.",
+      "genre": "Barn",
+      "author": "Paige Turner",
+      "image": "./Omslagsbilder/Barbie3.jpg",
+      "pages": 110,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Barbie: Prinsessakademin",
+      "description": "Barbie spelar Blair Willows, en godhjärtad tjej som blir utvald att gå på Princess Charm School.",
+      "genre": "Barn",
+      "author": "Ella Vator",
+      "image": "./Omslagsbilder/Barbie4.webp",
+      "pages": 115,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Barbie: En hemlighet bland feer",
+      "description": "Barbie upptäcker att feer är verkliga och att hennes stylistvänner faktiskt är feer.",
+      "genre": "Barn",
+      "author": "Holly Daze",
+      "image": "./Omslagsbilder/Barbie5.jpg",
+      "pages": 125,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Barbie: Pärlprinsessan",
+      "description": "Barbie spelar Lumina, en sjöjungfru som drömmer om att bli en prinsessa.",
+      "genre": "Barn",
+      "author": "Willie Makeit",
+      "image": "./Omslagsbilder/Barbie6.jpg",
+      "pages": 140,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Barbie och den hemliga dörren",
+      "description": "Barbie spelar Alexa, en blyg prinsessa som upptäcker en hemlig dörr i sitt rike.",
+      "genre": "Barn",
+      "author": "Cara Van",
+      "image": "./Omslagsbilder/Barbie7.jpg",
+      "pages": 135,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Barbie i Rock 'N Royals",
+      "description": "Barbie spelar prinsessan Courtney, en modern prinsessa som byter plats med Erika, en berömd rockstjärna.",
+      "genre": "Barn",
+      "author": "Justin Time",
+      "image": "./Omslagsbilder/Barbie8.jpg",
+      "pages": 145,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Barbie: Spionteamet",
+      "description": "Barbie och hennes vänner Teresa och Renee förvandlas från hårt arbetande gymnaster till hemliga agenter.",
+      "genre": "Barn",
+      "author": "Sal Monella",
+      "image": "./Omslagsbilder/Barbie9.jpg",
+      "pages": 150,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Barbie: Stjärnljusäventyret",
+      "description": "Barbie spelar en kosmisk prinsessa som flyger högt på sin svävarbräda genom en galax långt, långt borta.",
+      "genre": "Barn",
+      "author": "Emma Grate",
+      "image": "./Omslagsbilder/Barbie10.jpg",
+      "pages": 160,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Barbie: TV-spelshjälten",
+      "description": "Barbie dras magiskt in i sitt favoritspel.",
+      "genre": "Barn",
+      "author": "Cy Nara",
+      "image": "./Omslagsbilder/Barbie11.jpg",
+      "pages": 155,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Barbie: Delfinmagi",
+      "description": "Barbie och hennes systrar upptäcker sällsynta delfiner under ett besök hos Ken som gör sin praktik i marinbiologi.",
+      "genre": "Barn",
+      "author": "Major Payne",
+      "image": "./Omslagsbilder/Barbie12.webp",
+      "pages": 165,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Barbie: Prinsessäventyret",
+      "description": "Barbie och hennes vänner reser till landet Floravia för ett kungligt äventyr.",
+      "genre": "Barn",
+      "author": "Candy Barr",
+      "image": "./Omslagsbilder/Barbie13.webp",
+      "pages": 170,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Barbie: Dreamtopia",
+      "description": "Barbie och hennes lillasyster Chelsea reser genom den magiska världen Dreamtopia.",
+      "genre": "Barn",
+      "author": "Mel O'Drama",
+      "image": "./Omslagsbilder/Barbie14.jpg",
+      "pages": 175,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Barbie: Storstaden och stora drömmar",
+      "description": "Barbie åker till New York för ett sommarprogram inom scenkonst.",
+      "genre": "Barn",
+      "author": "Sue Flay",
+      "image": "./Omslagsbilder/Barbie15.jpg",
+      "pages": 180,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Barbie: Prinsessan och popstjärnan",
+      "description": "Barbie spelar Tori, en prinsessa som drömmer om att bli en popstjärna.",
+      "genre": "Barn",
+      "author": "Rocky Rhodes",
+      "image": "./Omslagsbilder/Barbie16.jpg",
+      "pages": 185,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Barbie: Mariposa och hennes fjärilsvänner",
+      "description": "Barbie spelar Mariposa, en fjärilsfé som älskar att läsa och drömma om världen utanför sitt hem.",
+      "genre": "Barn",
+      "author": "Russel Sprout",
+      "image": "./Omslagsbilder/Barbie17.jpg",
+      "pages": 190,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Barbie: Ö-prinsessan",
+      "description": "Barbie spelar Rosella, en flicka som blivit skeppsbruten på en ö och uppfostrad av djur.",
+      "genre": "Barn",
+      "author": "Wanda Rinn",
+      "image": "./Omslagsbilder/Barbie18.jpg",
+      "pages": 195,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Barbie: En perfekt jul",
+      "author": "Candy Kane",
+      "genre": "Barn",
+      "pages": "200",
+      "image": "./Omslagsbilder/Barbie19.jpg",
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Barbie: En sagolik modeshow",
+      "description": "Barbie spelar sig själv i detta magiska äventyr.",
+      "genre": "Barn",
+      "author": "Bea O'Problem",
+      "image": "./Omslagsbilder/Barbie20.jpg",
+      "pages": 205,
+      "status": "available",
+      "reveiws": [
+        {
+          "user": "namn",
+          "rating": 5,
+          "body": "toppen!"
+        }
+      ]
+    }
+  ]
+}

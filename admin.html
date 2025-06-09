@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="admin.js" defer></script>
+  <script src="SignOut.js" defer></script>
+</head>
+
+<body>
+  <header class="topNav">
+    <article>
+      <p id="logo">Barbiefy</p>
+    </article>
+    <nav>
+      <button type="button" id="logStatus" class="buttons">Logga in</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero-section">
+      <h1>Admin</h1>
+    </section>
+
+    <section id="inventory-section">
+      <table id="book-list">
+        <thead>
+          <tr>
+            <th class="table-img"></th>
+            <th class="table-data">Titel</th>
+            <th class="table-data">Författare</th>
+            <th class="table-data">Genre</th>
+            <th class="table-data">Sidor</th>
+            <th class="table-data">Beskrivning</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+      <p id="error-message"></p>
+    </section>
+    <div id="button-container">
+      <button id="open-add-book-modal">Lägg till bok</button>
+    </div>
+
+    <dialog id="add-book-modal" class="modal" aria-labelledby="add book modal">
+      <form id="add-book-form">
+        <h2>Lägg till en ny bok</h2>
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title" required />
+        <label for="author">Författare:</label>
+        <input type="text" id="author" name="author" required />
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required />
+        <label for="pages">Antal sidor:</label>
+        <input type="number" id="pages" name="pages" required />
+        <label for="image">Bild:</label>
+        <input type="text" id="image" name="image" placeholder="URL till bild..." />
+        <label for="description">Beskrivning:</label>
+        <textarea name="text" id="description" required></textarea>
+        <div class="button-area">
+          <button type="button" id="close-add-book-modal" class="close-add-book-modal"
+            aria-label="Cancel action and close modal">
+            Avbryt
+          </button>
+          <button type="submit" id="add-book-btn" aria-label="Add book and close modal">
+            Lägg till bok
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="book-information-modal" class="modal" aria-labelledby="Book information modal">
+      <div id="close-button-container">
+        <button id="close-modal" aria-label="Close modal">✖</button>
+      </div>
+      <div id="book-information">
+        <div id="modal-book-img">
+          <img id="modal-image" alt="Book cover image" />
+        </div>
+        <section id="modal-information">
+          <h3 id="modal-title"></h3>
+          <p id="modal-author"></p>
+          <ul id="modal-list">
+            <li id="modal-genre"></li>
+            <li id="modal-length"></li>
+            <li id="story">
+              <fieldset>
+                <legend>Beskrivning</legend>
+                <p id="modal-story"></p>
+              </fieldset>
+            </li>
+            <li id="modal-status"></li>
+          </ul>
+        </section>
+      </div>
+      <div class="button-area" id="edit-book-buttons">
+        <button class="delete-book-button" aria-label="remove book and close modal">
+          Ta bort bok
+        </button>
+        <button class="edit-book-button" aria-label="open edit book form">
+          Redigera
+        </button>
+      </div>
+      <form id="edit-book-form">
+        <label for="edit-title">Titel:</label>
+        <input type="text" id="edit-title" name="title" required />
+        <label for="edit-author">Författare:</label>
+        <input type="text" id="edit-author" name="author" required />
+        <label for="edit-genre">Genre:</label>
+        <input type="text" id="edit-genre" name="genre" required />
+        <label for="edit-pages">Antal sidor:</label>
+        <input type="number" id="edit-pages" name="pages" required />
+        <label for="edit-image">Bild:</label>
+        <input type="text" id="edit-image" name="image" placeholder="URL till bild..." />
+        <label for="edit-description">Beskrivning:</label>
+        <textarea name="description" id="edit-description" required></textarea>
+        <div class="button-area">
+          <button type="button" id="close-edit-book-modal" class="close-edit-book-modal"
+            aria-label="Cancel action and close modal">
+            Avbryt
+          </button>
+          <button type="submit" id="save-edit-button" aria-label="save and close modal">
+            Spara
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  <footer>
+
+    <section class="contactUs">
+      <section id="contactInfo">
+        <p><span>Mailadress: </span><a>barbiefy@info.com</a></p>
+        <p><span>Telefonnr: </span> <a>042-10 20 30</a></p>
+      </section>
+
+      <aside id="socials">
+        <img src="logos/facebook.svg">
+        <img src="logos/insta.svg">
+        <img src="logos/x.svg">
+        <img src="logos/wordpress.svg">
+      </aside>
+    </section>
+    <p id="copyRight">&copy;Barbiefy AB</p>
+  </footer>
+</body>
+
+</html>

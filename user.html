@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Userpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <script type="module" src="user.js" defer></script>
+    <script src="SignOut.js" defer></script>
+  </head>
+
+  <body>
+    <header class="topNav">
+      <article>
+        <p id="logo">Barbiefy</p>
+      </article>
+      <nav>
+        <button type="button" id="logStatus" class="buttons">Logga in</button>
+      </nav>
+    </header>
+    <main>
+      <section id="title-filter">
+        <section>
+          <h1 id="title">Alla böcker</h1>
+        </section>
+        <section>
+          <select id="filter-from-all" title="Filter">
+            <option selected disabled hidden value="null">Filter</option>
+            <option class="option-all" value="filter-all">Alla böcker</option>
+            <option class="option-all" value="filter-available">
+              Tillgängliga
+            </option>
+            <option class="option-all" value="filter-loaned">Utlånade</option>
+            <option class="option-user" value="filter-saved">
+              Alla sparade
+            </option>
+            <option class="option-user" value="filter-user-loan">
+              Lånar nu
+            </option>
+            <option class="option-user" value="filter-user-reserv">
+              Mina reserverade
+            </option>
+          </select>
+        </section>
+      </section>
+      <section class="books-container"></section>
+      <section id="book-history">
+        <h1>Historik</h1>
+      </section>
+      <section id="book-history">
+        <table id="history-list">
+          <thead>
+            <tr>
+              <th class="table-img"></th>
+              <th class="table-data">Titel</th>
+              <th class="table-data">Författare</th>
+              <th class="table-data">Genre</th>
+              <th class="table-data">Sidor</th>
+              <th class="table-data">Beskrivning</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <dialog id="modal">
+      <button id="close-modal" class="close-modal">✖</button>
+      <img id="modal-image" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-author"></p>
+      <ul id="modal-list">
+        <li id="modal-genre"></li>
+        <li id="modal-length"></li>
+        <li id="story">
+          <fieldset>
+            <legend>Beskrivning</legend>
+            <p id="modal-story"></p>
+          </fieldset>
+        </li>
+      </ul>
+      <p id="modal-status"></p>
+      <button
+        type="button"
+        id="bookStatusBtn"
+        class="loanStatusBtn buttons"
+      ></button>
+      <button
+        type="button"
+        id="add-review-button"
+        class="add-review-button buttons"
+      >
+        Skriv en recension
+      </button>
+      <fieldset class="review-sec">
+        <legend>Recensioner</legend>
+        <section id="reviews"></section>
+      </fieldset>
+      <form action="" id="review-form">
+        <label for="rating"
+          >Betyg:
+          <select name="rating" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <label for="review"></label>
+        <textarea name="review" id="review"></textarea>
+        <button type="submit" class="submit-review">Lämna recension</button>
+      </form>
+    </dialog>
+
+    <footer>
+      <section class="contactUs">
+        <section id="contactInfo">
+          <p><span>Mailadress: </span><a>barbiefy@info.com</a></p>
+          <p><span>Telefonnr: </span> <a>042-10 20 30</a></p>
+        </section>
+
+        <aside id="socials">
+          <img src="logos/facebook.svg" />
+          <img src="logos/insta.svg" />
+          <img src="logos/x.svg" />
+          <img src="logos/wordpress.svg" />
+        </aside>
+      </section>
+      <p id="copyRight">&copy;Barbiefy AB</p>
+    </footer>
+  </body>
+</html>

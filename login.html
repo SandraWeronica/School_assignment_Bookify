@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="logIn.js" defer></script>
+  <script src="SignOut.js" defer></script>
+  <script src="https://kit.fontawesome.com/9db2151981.js" crossorigin="anonymous"></script>
+  <title>Logga in</title>
+</head>
+
+<body>
+  <header class="topNav">
+    <article>
+      <p id="logo">Barbiefy</p>
+    </article>
+    <nav>
+      <a id="logIn" href="">Logga in</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formBox">
+      <h1 id="logInTitle">Logga in</h1>
+      <form id="loginForm">
+        <div class="inputField">
+          <i class="fa-solid fa-envelope"></i>
+          <label for="email" id="email"></label>
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="inputField">
+          <i class="fa-solid fa-lock"></i>
+          <label for="password" id="password"></label>
+          <input type="password" id="password" placeholder="Lösenord" required />
+        </div>
+        <p class="message" id="message"></p>
+        <div class="buttonField">
+          <button type="button" id="changeToSignUp">Bli medlem</button>
+          <button type="submit" id="signInBtn">Logga in</button>
+        </div>
+      </form>
+      <form id="signUpForm" class="hidden">
+        <div class="inputField">
+          <i class="fa-solid fa-user"></i>
+          <label for="name" id="name"></label>
+          <input type="text" id="name" class="inputField" placeholder="Ditt namn" required />
+        </div>
+        <div class="inputField">
+          <i class="fa-solid fa-envelope"></i>
+          <label for="email" id="email"></label>
+          <input type="email" id="email" class="inputField" placeholder="Din email" required />
+        </div>
+        <div class="inputField">
+          <i class="fa-solid fa-lock"></i>
+          <label for="password" id="password"></label>
+          <input type="password" id="password" class="inputField" placeholder="Välj lösenord" required />
+        </div>
+        <div class="inputField">
+          <i class="fa-solid fa-lock"></i>
+          <label for="confirmPassword" id="confirmPassword"></label>
+          <input type="password" id="confirmPassword" class="inputField" placeholder="Upprepa valt lösenord" required />
+        </div>
+        <div class="buttonField">
+          <button type="submit" id="signUpBtn">Bli medlem</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+
+    <section class="contactUs">
+      <section id="contactInfo">
+        <p><span>Mailadress: </span><a>barbiefy@info.com</a></p>
+        <p><span>Telefonnr: </span> <a>042-10 20 30</a></p>
+      </section>
+
+      <aside id="socials">
+        <img src="logos/facebook.svg">
+        <img src="logos/insta.svg">
+        <img src="logos/x.svg">
+        <img src="logos/wordpress.svg">
+      </aside>
+    </section>
+    <p id="copyRight">&copy;Barbiefy AB</p>
+  </footer>
+</body>
+
+</html>
